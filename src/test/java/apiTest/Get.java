@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 public class Get { // Read
 
 	@Test
-	public void GetCall() {
+	public void GetCall1() {
 
 		String apiURL = "https://swapi.dev/api/people/1/";
 
@@ -28,6 +28,18 @@ public class Get { // Read
 				.body();
 
 		System.out.println("Successfully executed Test->'GETRestAssured'");
+	}
+
+	@Test
+	public void GetCall2() {
+
+		String apiURL = "https://reqres.in/api/users/2";
+
+		// equal to - single matcher
+		// has items - multiple matchers
+		given().when().get(apiURL).then().statusCode(200).log().all().header("Content-Type", containsString("application/json"))
+		.assertThat().body(containsString("id"), containsString("email")).and().body("data.first_name", equalTo("Janet"));
+
 	}
 
 }

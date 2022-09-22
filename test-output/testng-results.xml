@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-22T02:39:47 EDT" name="TestV2" finished-at="2022-09-22T02:39:49 EDT" duration-ms="2707">
+  <suite started-at="2022-09-22T15:24:04 EDT" name="Default suite" finished-at="2022-09-22T15:24:06 EDT" duration-ms="1829">
     <groups>
     </groups>
-    <test started-at="2022-09-22T02:39:47 EDT" name="myTest" finished-at="2022-09-22T02:39:49 EDT" duration-ms="2707">
+    <test started-at="2022-09-22T15:24:04 EDT" name="Default test" finished-at="2022-09-22T15:24:06 EDT" duration-ms="1829">
       <class name="apiTest.Get">
-        <test-method signature="GetCall()[pri:0, instance:apiTest.Get@59fd97a8]" started-at="2022-09-22T02:39:47 EDT" name="GetCall" finished-at="2022-09-22T02:39:49 EDT" duration-ms="2675" status="PASS">
+        <test-method signature="GetCall2()[pri:0, instance:apiTest.Get@52e6fdee]" started-at="2022-09-22T15:24:04 EDT" name="GetCall2" finished-at="2022-09-22T15:24:06 EDT" duration-ms="1797" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GetCall -->
+        </test-method> <!-- GetCall2 -->
       </class> <!-- apiTest.Get -->
-    </test> <!-- myTest -->
-  </suite> <!-- TestV2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
